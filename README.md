@@ -1,5 +1,4 @@
 # Git_SSH-Account_Switch
-
 A CLI tool can switch ssh account to your current shell. You will easily switch to your git account & ssh key when using the server, and using your account to manipulate the project on the server.
 
 **NOTE**: This tool is for the user who using `Zsh` on the UNIX/Linux platfrom.
@@ -33,7 +32,7 @@ OPTIONS
   -h, --help              print help information.
   -add, --add_account     build git_account info. & ssh-key.
       -t, --type          ssh-key types, follow `ssh-keygen` rule,
-                          types: dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa(default)
+                          types: dsa | ecdsa | ecdsa-sk | ed25519(default) | ed25519-sk | rsa
   -rm, --remove_account   remove git_account info. & ssh-key from this device
   -out, --logout          logout your current ssh-acc.
 
@@ -101,7 +100,7 @@ $ git-acc --remove_account
 It will ask you to type:
 
 ```shell
-Enter the git user name you want to remove: <acc_name>
+Enter the alias of account you want to remove: <acc_alias>
 ```
 
 ### LOGOUT
